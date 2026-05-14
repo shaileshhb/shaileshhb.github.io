@@ -91,6 +91,11 @@ body {
   color: var(--text-primary);
 }
 
+.nav-links a[aria-current="page"] {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 /* Theme Toggle */
 .theme-toggle {
   background: none;
@@ -120,6 +125,25 @@ body {
 /* Main Content */
 .main {
   margin-bottom: 128px;
+}
+
+.page-intro {
+  margin-bottom: 48px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.page-lede {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 560px;
 }
 
 /* Hero Section */
@@ -486,6 +510,19 @@ body {
     margin-bottom: 64px;
   }
 
+  .page-intro {
+    margin-bottom: 40px;
+  }
+
+  .page-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .page-lede {
+    font-size: 16px;
+  }
+
   .section h2 {
     font-size: 20px;
     margin-bottom: 24px;
@@ -533,6 +570,14 @@ body {
 
   .hero h1 {
     font-size: 28px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .page-lede {
+    font-size: 15px;
   }
 
   .hero-description {

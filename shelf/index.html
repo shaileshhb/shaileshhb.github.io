@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading list · Shailesh Bhimanpelli</title>
+  <link rel="stylesheet" href="../styles/main.css" type="text/css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <a href="../" class="nav-brand">Shailesh Bhimanpelli</a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="../">Home</a>
+            <a href="./" aria-current="page">Shelf</a>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">☀️</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="page-intro">
+        <h1 class="page-title">Reading list</h1>
+        <p class="page-lede">
+          Articles, blogs, and papers worth saving—replace the examples below with your own links anytime.
+        </p>
+      </div>
+
+      <section class="section">
+        <div class="content">
+          <div class="writing-item">
+            <a href="https://abhishekbansal.dev/setup-multiple-github-accounts-on-same-machine/" target="_blank"
+              rel="noopener noreferrer" class="writing-link">
+              <span class="writing-title">Managing Multiple GitHub Accounts on One Mac</span>
+              <span class="link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Shailesh Bhimanpelli</p>
+    </footer>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = themeToggle.querySelector(".theme-icon");
+    const body = document.body;
+
+    const currentTheme = localStorage.getItem("theme") || "dark";
+    body.setAttribute("data-theme", currentTheme);
+    updateThemeIcon(currentTheme);
+
+    themeToggle.addEventListener("click", () => {
+      const theme = body.getAttribute("data-theme");
+      const newTheme = theme === "dark" ? "light" : "dark";
+
+      body.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
+    }
+  </script>
+</body>
+
+</html>
