@@ -93,6 +93,18 @@
                 Building an integration suite for SAP applications to ensure that complex interfaces are reliable,
                 well-documented, governed, and continuously improved.
               </p>
+              <p class="work-description">
+                Designed REST API from scratch and wrote Swagger/OpenAPI docs. Backend follows a controller → service →
+                repository layout: controllers handle HTTP, services hold business rules, repositories talk to the data
+                layer.
+              </p>
+              <p class="work-description">
+                Built bulk edit for users who need to change many items the same way: search, narrow the list, pick the
+                rows they want, then set the shared fields once so all selected rows update together.
+              </p>
+              <p class="work-description">
+                Set up automated deployments with GitHub Actions, added Prettier, and gated merges on CI checks.
+              </p>
             </div>
             <div class="work-item">
               <div class="work-header">
@@ -133,19 +145,26 @@
           <div class="content">
             <div class="project-item">
               <div class="project-header">
-                <h3>EnvelopeFinance</h3>
-                <a href="https://github.com/shaileshhb/equisplit-backend" target="_blank" class="project-link">
+                <h3>Report Extractor</h3>
+                <a href="https://github.com/shaileshhb/pdf-extractorv2" target="_blank" class="project-link">
                   <span class="link-icon">↗</span>
                   <span>GitHub</span>
                 </a>
               </div>
               <p class="project-description">
-                EnvelopeFinance is a web-based platform that empowers users to take control of their finances by
-                utilizing the power of envelope budgeting. Users can easily budget and manage their money in a simple
-                and effective way. We provide users with the tools they need to make smarter financial decisions, build
-                better budgeting habits, and ultimately achieve their financial goals
+                A pipeline and web UI for Indian listed‑company disclosures: ingest financial PDFs from NSE/BSE filings
+                and extract structured balance sheets, profit and loss statements, and cash flow statements for
+                analysis.
               </p>
-              <p class="project-description">Tools Used: Golang, Flutter, MySQL, Docker</p>
+              <p class="project-description">
+                For the balance sheet and P&L, the tool also pulls notes to accounts out of noisy PDF layouts using OCR
+                (e.g. PaddleOCR), then uses LLMs to rebuild those notes into clean, readable HTML.
+              </p>
+              <p class="project-description">
+                On top of the extracted figures and notes, it builds a small knowledge base from chosen fields in the
+                reports so users can compare context and rationale when deciding whether a stock fits their thesis.
+              </p>
+              <p class="project-description">Tools Used: Python, React, PaddleOCR, LLMs, PostgresSQL</p>
             </div>
           </div>
         </section>
@@ -157,9 +176,9 @@
             <div class="writing-item">
               <a href="https://blog.shaileshhb.in/go-csv-parsing" target="_blank" class="writing-link">
                 <span class="writing-title">CSV Parsing in Golang</span>
-                <span class="writing-description"
-                  >Effortless CSV parsing in Golang with a hands-on approach to data manipulation.</span
-                >
+                <span class="writing-description">
+                  Effortless CSV parsing in Golang with a hands-on approach to data manipulation.
+                  </span>
                 <span class="link-arrow">→</span>
               </a>
             </div>
@@ -171,9 +190,9 @@
                 class="writing-link"
               >
                 <span class="writing-title">NodeJS ReadStream and WriteStream</span>
-                <span class="writing-description"
-                  >A beginner's journey into understanding Node.js streams for efficient data processing.</span
-                >
+                <span class="writing-description">
+                  A beginner's journey into understanding Node.js streams for efficient data processing.
+                  </span>
                 <span class="link-arrow">→</span>
               </a>
             </div>
@@ -185,9 +204,9 @@
                 class="writing-link"
               >
                 <span class="writing-title">Building a Task Scheduler in Go</span>
-                <span class="writing-description"
-                  >Building a task scheduler in Go with a focus on reliability and scalability.</span
-                >
+                <span class="writing-description">
+                  Building a task scheduler in Go with a focus on reliability and scalability.
+                  </span>
                 <span class="link-arrow">→</span>
               </a>
             </div>
