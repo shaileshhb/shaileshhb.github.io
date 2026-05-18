@@ -302,9 +302,9 @@ body {
 }
 
 .work-description {
+  padding-top: 1rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  padding-top: 1rem;
 }
 
 /* Project Items */
@@ -358,9 +358,9 @@ body {
 }
 
 .project-description {
+  padding-top: 1rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  padding-top: 1rem;
 }
 
 /* Writing Items */
